@@ -15,10 +15,11 @@ const App = () => {
 
   const a = 10
   const b = 20
+  const name = "Bob"
 
   return (
     <div>
-      <Hello name="Bob"/>
+      <Hello name={name}/>
       <p>
         {a} multiplied by {b} = {a * b}
       </p>
