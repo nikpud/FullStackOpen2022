@@ -1,9 +1,12 @@
-const Hello = () => {
+const Hello = (props) => {
 
   const now = new Date()
 
   return (
-    <p>It is {now.toString()}</p>
+    <div>
+      <p>Hello {props.name}</p>
+      <p>It is {now.toString()}</p>
+    </div>
 
   )
 }
@@ -15,7 +18,7 @@ const App = () => {
 
   return (
     <div>
-      <Hello />
+      <Hello name="Bob"/>
       <p>
         {a} multiplied by {b} = {a * b}
       </p>
