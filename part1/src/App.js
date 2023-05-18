@@ -1,33 +1,25 @@
-const Hello = (props) => {
+import logo from './logo.svg';
+import './App.css';
 
-  const now = new Date()
-
+function App() {
   return (
-    <>
-      <p>Hello {props.name}</p>
-      <p>It is {now.toString()}</p>
-    </>
-
-  )
-}
-
-const App = () => {
-
-  const a = 10
-  const b = 20
-  const name = "Bob"
-
-  // console.log(a, b, name)
-
-  return (
-    <div>
-      <Hello name={name}/>
-      <p>
-        {a} multiplied by {b} = {a * b}
-      </p>
-      <p>Full Stack Open part1</p>
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
