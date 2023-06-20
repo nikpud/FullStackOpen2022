@@ -1,4 +1,4 @@
-# FullStackOpen2022
+# Full Stack Open
 A course on React, Redux, Node.js, MongoDB, GraphQL and TypeScript.
 https://fullstackopen.com/en/
 
